@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Open VPN on Documentation for Hugo Learn Theme</title>
+    <link>//localhost:1313/en/kb/tools_processes/openvpn/</link>
+    <description>Recent content in Open VPN on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 05 Feb 2022 10:31:29 -0500</lastBuildDate>
+    <atom:link href="//localhost:1313/en/kb/tools_processes/openvpn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>openvpn zero length crt openssl</title>
+      <link>//localhost:1313/en/kb/tools_processes/openvpn/openvpn-zero-length-crt-openssl/</link>
+      <pubDate>Sat, 05 Feb 2022 10:31:29 -0500</pubDate>
+      <guid>//localhost:1313/en/kb/tools_processes/openvpn/openvpn-zero-length-crt-openssl/</guid>
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Knowledge Base Article - CTAC (Communications Training Analysis Corporation)  &#xA;=================================================&#xA;&#xA;Subject: OpenVPN generating zero length crt files&#xA;&#xA;Revision History:&#xA;    2015-05-13 11:03:03 - Version 1 created by Paul Rigor&#xA;&#xA;Details: (include steps to reproduce, symptoms, corrective actions, contact information, links and a any other helpful information)&#xA;&#xA;And.... manually you get Error Loading extension section usr_cert&#xA;&#xA;then most likely OpenSSL 1.0 broke OPENVPN.&#xA;&#xA;run the following:&#xA;&#xA;perl -p -i -e &amp;#39;s|^(subjectAltName=)|#$1|;&amp;#39; /etc/openvpn/easy-rsa/openssl-1.0.0.cnf&#xA;&#xA;Ref:  http://stackoverflow.com/questions/24255205/error-loading-extension-section-usr-cert&#xA;&#xA;&#xA;&#xA;=================================================&#xA;This document is proprietary and confidential. No part of this document may be &#xA;disclosed in any manner to a third party without the prior written consent of &#xA;CTAC.```&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+  </channel>
+</rss>

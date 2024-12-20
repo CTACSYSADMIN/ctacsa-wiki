@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Drush on Documentation for Hugo Learn Theme</title>
+    <link>//localhost:1313/en/kb/tools_processes/drush/</link>
+    <description>Recent content in Drush on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 05 Feb 2022 10:31:29 -0500</lastBuildDate>
+    <atom:link href="//localhost:1313/en/kb/tools_processes/drush/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>installing drush version 8</title>
+      <link>//localhost:1313/en/kb/tools_processes/drush/installing-drush-version-8/</link>
+      <pubDate>Sat, 05 Feb 2022 10:31:29 -0500</pubDate>
+      <guid>//localhost:1313/en/kb/tools_processes/drush/installing-drush-version-8/</guid>
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Knowledge Base Article - CTAC (Communications Training Analysis Corporation)  &#xA;=================================================&#xA;&#xA;Subject: Installling Drush version 8&#xA;&#xA;Revision History:&#xA;    2015-12-4 14:09:06 - Version 1 created by Bai&#xA;&#xA;Details: (include steps to reproduce, symptoms, corrective actions, contact information, links and a any other helpful information)&#xA;&#xA;If weikai asks for drush to be installed but insists on version 8, copy/pasta these commands:&#xA;&#xA;apt-get update; apt-get install php5-cli; curl -sS https://getcomposer.org/installer | php; mv composer.phar /usr/local/bin/composer; sed -i &amp;#39;1i export PATH=&amp;#34;$HOME/.composer/vendor/bin:$PATH&amp;#34;&amp;#39; $HOME/.bashrc; source $HOME/.bashrc; composer global require drush/drush&#xA;&#xA;&#xA;Then run a drush —-version to confirm the version.&#xA;&#xA;&#xA;=================================================&#xA;This document is proprietary and confidential. No part of this document may be &#xA;disclosed in any manner to a third party without the prior written consent of &#xA;CTAC.```&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+  </channel>
+</rss>

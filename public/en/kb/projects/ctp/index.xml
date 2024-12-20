@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CTP on Documentation for Hugo Learn Theme</title>
+    <link>//localhost:1313/en/kb/projects/ctp/</link>
+    <description>Recent content in CTP on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 05 Feb 2022 10:31:29 -0500</lastBuildDate>
+    <atom:link href="//localhost:1313/en/kb/projects/ctp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ctp exchange lab javascript runtime error</title>
+      <link>//localhost:1313/en/kb/projects/ctp/ctp-exchange-lab-javascript-runtime-error/</link>
+      <pubDate>Sat, 05 Feb 2022 10:31:29 -0500</pubDate>
+      <guid>//localhost:1313/en/kb/projects/ctp/ctp-exchange-lab-javascript-runtime-error/</guid>
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Knowledge Base Article - CTAC (Communications Training Analysis Corporation)  &#xA;=================================================&#xA;&#xA;Subject: CTP Exchange Lab Deployment Error Could not find a JavaScript runtime&#xA;&#xA;Revision History:&#xA;    2015-02-20 08:24:52 - Version 1 created by Paul Rigor&#xA;&#xA;Details: (include steps to reproduce, symptoms, corrective actions, contact information, links and a any other helpful information)&#xA;&#xA;If you get the below error, you need nodejs installed.  apt-get install nodejs.&#xA;&#xA;F, [2015-02-20T16:21:07.967647 #15635] FATAL -- :&#xA;ActionView::Template::Error (Could not find a JavaScript runtime. See https://github.com/sstephenson/execjs for a list of available runtimes.&#xA;  (in /appdata/ctp_exchange_lab/releases/20150220161336/app/assets/javascripts/application.js)):&#xA;    93:&#xA;    94:     &amp;lt;%= render partial: &amp;#34;layouts/footer&amp;#34; %&amp;gt;&#xA;    95:&#xA;    96:     &amp;lt;%= javascript_include_tag &amp;#39;application&amp;#39; %&amp;gt;&#xA;    97:     &amp;lt;script type=&amp;#34;text/javascript&amp;#34; src=&amp;#34;//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5424265107e738a0&amp;amp;domready=1&amp;#34;&amp;gt;&amp;lt;/script&amp;gt;&#xA;    98:&#xA;    99:     &amp;lt;%= render partial: &amp;#34;content_items/checkout_handlebars&amp;#34; %&amp;gt;&#xA;  app/views/layouts/application.html.erb:96:in `_app_views_layouts_application_html_erb___1952985711913696268_39735280&amp;#39;&#xA;  /appdata/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/benchmark.rb:294:in `realtime&amp;#39;&#xA;  /appdata/.rvm/gems/ruby-2.1.1@ctp_exchange_lab/bin/unicorn:23:in `load&amp;#39;&#xA;  /appdata/.rvm/gems/ruby-2.1.1@ctp_exchange_lab/bin/unicorn:23:in `&amp;lt;main&amp;gt;&amp;#39;&#xA;  /appdata/.rvm/gems/ruby-2.1.1@ctp_exchange_lab/bin/ruby_executable_hooks:15:in `eval&amp;#39;&#xA;  /appdata/.rvm/gems/ruby-2.1.1@ctp_exchange_lab/bin/ruby_executable_hooks:15:in `&amp;lt;main&amp;gt;&amp;#39;&#xA;&#xA;nodejs has been installed on r-public-as-05 and r-public-as-06 on 02-20-2015 for CS-1906 (HHS)&#xA;&#xA;=================================================&#xA;This document is proprietary and confidential. No part of this document may be &#xA;disclosed in any manner to a third party without the prior written consent of &#xA;CTAC.```&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+  </channel>
+</rss>

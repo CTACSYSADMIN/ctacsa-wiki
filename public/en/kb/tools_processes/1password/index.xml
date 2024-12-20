@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1Password on Documentation for Hugo Learn Theme</title>
+    <link>//localhost:1313/en/kb/tools_processes/1password/</link>
+    <description>Recent content in 1Password on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 05 Feb 2022 10:31:29 -0500</lastBuildDate>
+    <atom:link href="//localhost:1313/en/kb/tools_processes/1password/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1password ctac sysadmin vault and mobile info</title>
+      <link>//localhost:1313/en/kb/tools_processes/1password/1password-ctac-sysadmin-vault-and-mobile-info/</link>
+      <pubDate>Sat, 05 Feb 2022 10:31:29 -0500</pubDate>
+      <guid>//localhost:1313/en/kb/tools_processes/1password/1password-ctac-sysadmin-vault-and-mobile-info/</guid>
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Knowledge Base Article - CTAC (Communications Training Analysis Corporation)  &#xA;=================================================&#xA;&#xA;Subject: Syncing CTAC-SysAdmin Vault for 1Password.&#xA;&#xA;Revision History:&#xA;    2015-02-04 15:20:19 - Version 1 created by Paul Rigor&#xA;&#xA;Details: (include steps to reproduce, symptoms, corrective actions, contact information, links and a any other helpful information)&#xA;&#xA;1) Be sure to have Google Drive installed.   https://www.google.com/drive/download/&#xA;2) After installing:  Be sure to let you Google Drive sync.. this should sync to ~/Google Drive.&#xA;3) After it is sync’d, navigate to ~/Google Drive/sysadmin_library/vault and right-click &amp;gt; open with 1Password XXXX  .. If you have the commercial and Beta installed you may have several versions listed.. select the latest.  You will need to enter the vault password.  This is different from your primary vault password.&#xA;&#xA;You should be good to go.&#xA;&#xA;THIS VAULT IS SHARED.  Only store credentials and information that is for the team.  DO NOT DELETE, MOVE or otherwise damage this file.   &#xA;&#xA;If you use the 1Password for iOS.. (and possibly android) .. it only allows one sync service (dropbox).  There are some options.. if you store vaults in Google Drive or elsewhere.&#xA;&#xA;1) WiFi syncing..&#xA;2) Use MacDropAny.app [or manually]  (http://www.zibity.com/macdropany.html) which quickly creates a symlink between your Dropbox 1Password folder and  your folder (e.g. lrwxr-xr-x   1 prigor  staff    50 Jan 16 13:52 ctac-sysadmin-vault -&amp;gt; /Users/prigor/Google Drive/sysadmin_library/vault/)&#xA;   — Note you will need a dropbox account.  Which you probably have since the Syndication team mainly uses dropbox for sharing.&#xA;&#xA;&#xA;&#xA;=================================================&#xA;This document is proprietary and confidential. No part of this document may be &#xA;disclosed in any manner to a third party without the prior written consent of &#xA;CTAC.```&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+  </channel>
+</rss>

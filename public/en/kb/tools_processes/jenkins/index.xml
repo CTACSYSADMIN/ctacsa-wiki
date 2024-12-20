@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jenkins on Documentation for Hugo Learn Theme</title>
+    <link>//localhost:1313/en/kb/tools_processes/jenkins/</link>
+    <description>Recent content in Jenkins on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 05 Feb 2022 10:31:29 -0500</lastBuildDate>
+    <atom:link href="//localhost:1313/en/kb/tools_processes/jenkins/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>rca noc jenkins was down</title>
+      <link>//localhost:1313/en/kb/tools_processes/jenkins/rca-noc-jenkins-was-down/</link>
+      <pubDate>Sat, 05 Feb 2022 10:31:29 -0500</pubDate>
+      <guid>//localhost:1313/en/kb/tools_processes/jenkins/rca-noc-jenkins-was-down/</guid>
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Root Cause Analysis Article - CTAC (Communications Training Analysis Corporation)  &#xD;=================================================&#xD;&#xD;Subject:&#xD;&#xD;Revision History:&#xD;    2019-08-6 - Version 1 created by Bimal Thapa&#xD;&#xD;Details: (include steps to reproduce, symptoms, corrective actions, contact information, links and a any other helpful information)&#xD;&#xD;Analysis to: &#xD;� NOC environment&#xD;&#xD;Links:&#xD;https://ci.ctacdev.com&#xD;&#xD;Background: I was working on NOC Jenkins to test out some build jobs. We lost internet connection for about 10 minutes and when I tried to login into  NOC jenkins, the site url gave out 503 gateway errors.&#xD;&#xD;&#xD;Timeline:&#xD;&#xD;� August 06, 2019 �&#xD;@11:50am Internet goes down and investigation starts.&#xD;@Appro 12:00 bnguyen reboots the CTAC untangle router and around 12:05 Internet comes back up but NOC Jenkins url is throwing 503 gateway errors&#xD;@12:05 I (Bimal) raise this issue on the sysadmin-coupe channel that I will be looking into this issue&#xD;   @Checked on toolstack-01 which hosts NOC Jenkins, it shows puppet agent along with  Jenkins was running but the site url wasn�t coming back up&#xD;&#xD;Diagnosis:&#xD;Jenkins url wasn�t coming backup despite of seeing the processes running on toolstack-01 server which hosts Jenkins. Ran puppet agent to pull the latest configs from the puppetmaster which resulted in throwing out incorrect Java version error during the puppet run. Upon further investigation, we were able to pinpoint that Jenkins was using the wrong Java version i.e. �1.7.0_201� instead of �1.8.0_222�. Java didn�t upgrade to the latest version of Jenkins and it, along with other binaries were stilling pointing to the default Java version. We were able to see what versions of Java was installed by running &amp;gt;update-java-alternatives �list&#xD;Since the symlink was pointing to the wrong version, we reset it point to the Java version �1.8.0_222�. Following that, we restarted Jenkins and reboot the server as well. Jenkins was fully functional by appro. 1:30pm&#xD;&#xD;Recommendations:&#xD;Check if there are an existing alert to notify the end users if the site url is down followed by a creation of new sensu check that notifies users if incorrect version of Java is linked to Jenkins.&#xD;&#xD;Additional Notes:&#xD;Once the root cause was identified, we repointed the symlink to the Java version that Jenkins was using.&#xD;&#xD;&#xD;=================================================&#xD;This document is proprietary and confidential. No part of this document may be &#xD;disclosed in any manner to a third party without the prior written consent of &#xD;CTAC.&#xD;```&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+  </channel>
+</rss>

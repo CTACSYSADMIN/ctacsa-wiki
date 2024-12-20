@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CTAC on Documentation for Hugo Learn Theme</title>
+    <link>//localhost:1313/en/kb/ctac/</link>
+    <description>Recent content in CTAC on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 05 Feb 2022 10:31:29 -0500</lastBuildDate>
+    <atom:link href="//localhost:1313/en/kb/ctac/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>connecting</title>
+      <link>//localhost:1313/en/kb/ctac/connecting/</link>
+      <pubDate>Sat, 05 Feb 2022 10:31:29 -0500</pubDate>
+      <guid>//localhost:1313/en/kb/ctac/connecting/</guid>
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Knowledge Base Article - CTAC (Communications Training Analysis Corporation)  &#xA;=================================================&#xA;&#xA;Subject: Connecting to CTAC dev-nas&#xA;&#xA;Revision History:&#xA;    2017-10-12 09:48:14 - Version 1 created by Bao&#xA;&#xA;Details: (include steps to reproduce, symptoms, corrective actions, contact information, links and a any other helpful information)&#xA;&#xA;CI:&#xA; - 172.16.14.25 (Synology disk station 1U)&#xA;&#xA;Prerequisites&#xA;- You are connected to CTAC VPN&#xA;&#xA;Steps:&#xA;- Open a Finder window&#xA;- CMD + K&#xA;- in the prompt, type afp://172.16.14.25&#xA;- Hit Enter&#xA;- Confirm you are connected by clicking on dev-nas in Finder.&#xA;&#xA;&#xA;&#xA;=================================================&#xA;This document is proprietary and confidential. No part of this document may be &#xA;disclosed in any manner to a third party without the prior written consent of &#xA;CTAC.```&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>ctac vpn</title>
+      <link>//localhost:1313/en/kb/ctac/ctac-vpn/</link>
+      <pubDate>Sat, 05 Feb 2022 10:31:29 -0500</pubDate>
+      <guid>//localhost:1313/en/kb/ctac/ctac-vpn/</guid>
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Knowledge Base Article - CTAC (Communications Training Analysis Corporation)  &#xA;=================================================&#xA;&#xA;Subject: CTAC VPN&#xA;&#xA;Revision History:&#xA;    2019-11-08 17:56:00 - Version 1 created by Bao&#xA;&#xA;Details: (include steps to reproduce, symptoms, corrective actions, contact information, links and a any other helpful information)&#xA;- This applies to CTAC-HQ VPN&#xA;&#xA;Links: http://172.16.14.1&#xA;Link for recreation tracking: https://docs.google.com/spreadsheets/d/1hCJ1LABTy7Y1g5Rgg1ciP7hgAOeYDHB1ZLPo5ina4-s/edit#gid=0&#xA;&#xA;&#xA;Prerequisites&#xA;Need to be on CTAC network or VPN&amp;#39;ed in&#xA;Credentials are in 1P&#xA;&#xA;&#xA;Note: This kb created as a result of upgrading the office firewall. it has more to do with recreating VPN accounts. But would also apply to new user creation&#xA;- Log into 172.16.14.1&#xA;- Apps &amp;gt; OpenVPN &amp;gt; Server &amp;gt; Remove the old user (click the trash can icon and click save)&#xA;- Config &amp;gt; Local Directory &amp;gt; Create user, and note the password&#xA;- Apps &amp;gt; OpenVPN &amp;gt; Server &amp;gt; create the same user from the previous step&#xA;&#xA;&#xA;Send an email to the user with the following:&#xA;=========&#xA;Hello,&#xA;Attached are your new VPN files for connecting to CTAC VPN. Instructions below. Let me know if you have issues with connecting.&#xA;&#xA;1) If you already have an existing VPN connection configured, delete it.&#xA;2) Unzip the attached file to a directory of your choice&#xA;3) Double click on the *.ovpn file to import the connection&#xA;4) To test your connection you will need to be outside of the CTAC network&#xA;&#xA;User: &amp;lt;user name&amp;gt;&#xA;Password: &amp;lt;onetimesecret.com&amp;gt;&#xA;=========&#xA;&#xA;&#xA;=================================================&#xA;This document is proprietary and confidential. No part of this document may be &#xA;disclosed in any manner to a third party without the prior written consent of &#xA;CTAC.```&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>ctacorp upgtrade wordpress version</title>
+      <link>//localhost:1313/en/kb/ctac/ctacorp-upgtrade-wordpress-version/</link>
+      <pubDate>Sat, 05 Feb 2022 10:31:29 -0500</pubDate>
+      <guid>//localhost:1313/en/kb/ctac/ctacorp-upgtrade-wordpress-version/</guid>
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Knowledge Base Article - CTAC (Communications Training Analysis Corporation)&#xA;=================================================&#xA;&#xA;Subject: ctacorp site upgrade wordpress&#xA;&#xA;Revision History: &#xA;    02-04-2022 13:00 EST - Version 1 created by Bao&#xA;&#xA;Details: (include steps to reproduce, symptoms, corrective actions, contact information, links and a any other helpful information)&#xA;&#xA;If rob asks to upgrade PHP or wordpress version:&#xA;go to https://ci.ctacdev.com/job/ctac-docker-wordpress-base/ &amp;gt; Configure &amp;gt; Go to the last execute shell &amp;gt; copy the text &amp;gt; Create a new &amp;#39;execute shell&amp;#39; &amp;gt; use the WORDPRESS_VERSION that Rob wants.&#xA;&#xA;Add Execute Docker command and use the tag that corresponds to what you&amp;#39;ve specified in the Execute Shell command.&#xA;&#xA;=================================================&#xA;This document is proprietary and confidential. No part of this document may be&#xA;disclosed in any manner to a third party without the prior written consent of&#xA;CTAC.```&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+  </channel>
+</rss>

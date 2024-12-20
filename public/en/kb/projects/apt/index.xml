@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>APT on Documentation for Hugo Learn Theme</title>
+    <link>//localhost:1313/en/kb/projects/apt/</link>
+    <description>Recent content in APT on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 05 Feb 2022 10:31:29 -0500</lastBuildDate>
+    <atom:link href="//localhost:1313/en/kb/projects/apt/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>apt key expired</title>
+      <link>//localhost:1313/en/kb/projects/apt/apt-key-expired/</link>
+      <pubDate>Sat, 05 Feb 2022 10:31:29 -0500</pubDate>
+      <guid>//localhost:1313/en/kb/projects/apt/apt-key-expired/</guid>
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Knowledge Base Article - CTAC (Communications Training Analysis Corporation)  &#xA;=================================================&#xA;&#xA;Subject: APT KEY EXPIRED ERROR&#xA;&#xA;Revision History:&#xA;    2016-07-09 08:49:51 - Version 1 created by Paul Rigor&#xA;&#xA;Details: (include steps to reproduce, symptoms, corrective actions, contact information, links and a any other helpful information)&#xA;&#xA; If you get an APT KEY EXPIRED message (first observed for Puppet APT repo), then do the following to repair it:&#xA;&#xA; apt-key list | grep expired&#xA;&#xA; &amp;lt; get the HEX value after the / &amp;gt;&#xA;&#xA;apt-key adv --recv-keys --keyserver keys.gnupg.net &amp;lt; HEX value &amp;gt;&#xA;&#xA;=================================================&#xA;This document is proprietary and confidential. No part of this document may be &#xA;disclosed in any manner to a third party without the prior written consent of &#xA;CTAC.```&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+  </channel>
+</rss>

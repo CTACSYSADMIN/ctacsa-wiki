@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Consul on Documentation for Hugo Learn Theme</title>
+    <link>//localhost:1313/en/kb/tools_processes/consul/</link>
+    <description>Recent content in Consul on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 05 Feb 2022 10:31:29 -0500</lastBuildDate>
+    <atom:link href="//localhost:1313/en/kb/tools_processes/consul/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>consul adding env vars to app</title>
+      <link>//localhost:1313/en/kb/tools_processes/consul/consul-adding-env-vars-to-app/</link>
+      <pubDate>Sat, 05 Feb 2022 10:31:29 -0500</pubDate>
+      <guid>//localhost:1313/en/kb/tools_processes/consul/consul-adding-env-vars-to-app/</guid>
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Knowledge Base Article - CTAC (Communications Training Analysis Corporation)  &#xA;=================================================&#xA;&#xA;Subject: How to add an environment variable for a docker application&#xA;&#xA;Revision History:&#xA;    2016-10-03 13:35:05 - Version 1 created by Jeannette Rigor&#xA;&#xA;Details: (include steps to reproduct, symptoms, corrective actions, contact information, links and a any other helpful information)&#xA;&#xA;Details&#xA;&#xA;Docker applications use environment variables, that are managed by consul-template and consul service discovery.&#xA;If a developer requests an environment variable be added for their application, the variable will need to be added to the consul-template which creates the corresponding config file, and into consul.&#xA;&#xA;- The consul-templates can be found in the development application repo.&#xA;  The variable(s) will need to be added to the appropriate template in the repo.&#xA;  (IF there is no available consul template, the app may be an exception and the env variable may get set in the build job in Jenkins)&#xA;&#xA;- Once the variable has been added to the consul template, make sure you add the variable key/value pairs into the consul server. One key/value pair for each variable in each environment folder.&#xA;  The consul server URLs are by customer name, ex: cpsc-consul.ctacdev.com, gsa-consul.ctacdev.com&#xA;&#xA;&#xA;&#xA;=================================================&#xA;This document is proprietary and confidential. No part of this document may be &#xA;disclosed in any manner to a third party without the prior written consent of &#xA;CTAC.```&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>consul clean up nonexistent registered services</title>
+      <link>//localhost:1313/en/kb/tools_processes/consul/consul-clean-up-nonexistent-registered-services/</link>
+      <pubDate>Sat, 05 Feb 2022 10:31:29 -0500</pubDate>
+      <guid>//localhost:1313/en/kb/tools_processes/consul/consul-clean-up-nonexistent-registered-services/</guid>
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Knowledge Base Article - CTAC (Communications Training Analysis Corporation)  &#xA;=================================================&#xA;&#xA;Subject: Consul - Unregister services that are not running&#xA;&#xA;Revision History:&#xA;    2016-06-28 - Version 1 created by Jeannette Rigor&#xA;&#xA;&#xA;Details: (include steps to reproduce, symptoms, corrective actions, contact information, links and a any other helpful information)&#xA;&#xA;Symptoms: &#xA;Sometimes consul will show registered containers/services even though they are not actually running on an ECS instance. &#xA;This occurs when consul is having communication issues with the agent on the ECS instances, such as during an instance reboot.&#xA;&#xA;&#xA;To fix:&#xA;Unregister the rogue services by running the following script on each ECS instance:&#xA;  ctac-rm-non-running-registered-containers.sh&#xA;&#xA;Script is located in sysadmin_tools repo in consul directory&#xA;&#xA;&#xA;=================================================&#xA;This document is proprietary and confidential. No part of this document may be &#xA;disclosed in any manner to a third party without the prior written consent of &#xA;CTAC.```&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Printers on Documentation for Hugo Learn Theme</title>
+    <link>//localhost:1313/en/kb/ctac/printers/</link>
+    <description>Recent content in Printers on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 05 Feb 2022 10:31:29 -0500</lastBuildDate>
+    <atom:link href="//localhost:1313/en/kb/ctac/printers/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>canon 5250 printer install</title>
+      <link>//localhost:1313/en/kb/ctac/printers/canon-5250-printer-install/</link>
+      <pubDate>Sat, 05 Feb 2022 10:31:29 -0500</pubDate>
+      <guid>//localhost:1313/en/kb/ctac/printers/canon-5250-printer-install/</guid>
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;IKnowledge Base Article - CTAC (Communications Training Analysis Corporation)  &#xA;=================================================&#xA;&#xA;Subject: Canon 5250 color laser network printer install&#xA;&#xA;Revision History:&#xA;    2015-07-07 09:51:00 - Version 1 created by Bao&#xA;&#xA;Details: (include steps to reproduce, symptoms, corrective actions, contact information, links and a any other helpful information)&#xA;&#xA;Links:&#xA;  http://www.usa.canon.com/cusa/office/products/hardware/multifunction_printers_copiers/color_copiers imagerunner_advance_c5255#DriversAndSoftware&#xA;&#xA;- Go to the Canon website and search for drivers for the 5250 color laser network printer. (or you can see the Links section above for the link).&#xA;- download the PS_v04.05.00_Mac.zip&#xA;- unzip the *.zip file and you will see a *.img.&#xA;- double click the *.img file&#xA;- Install the driver&#xA;- Go to Mac settings, and add a printer. Go through the prompts.&#xA;- select LPD for protocol (Very important that LDP is selected)&#xA;- Address: 172.16.10.33&#xA;- Select Generic PostScript Printer&#xA;- Continue through the prompts to get the printer installed.&#xA;- Print a test page. You should be good. If not, edit this KB with your findings.&#xA;&#xA;=================================================&#xA;This document is proprietary and confidential. No part of this document may be &#xA;disclosed in any manner to a third party without the prior written consent of &#xA;CTAC.```&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Searchblox on Documentation for Hugo Learn Theme</title>
+    <link>//localhost:1313/en/kb/tools_processes/searchblox/</link>
+    <description>Recent content in Searchblox on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 05 Feb 2022 10:31:29 -0500</lastBuildDate>
+    <atom:link href="//localhost:1313/en/kb/tools_processes/searchblox/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>searchblox ami smoke test</title>
+      <link>//localhost:1313/en/kb/tools_processes/searchblox/searchblox-ami-smoke-test/</link>
+      <pubDate>Sat, 05 Feb 2022 10:31:29 -0500</pubDate>
+      <guid>//localhost:1313/en/kb/tools_processes/searchblox/searchblox-ami-smoke-test/</guid>
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Knowledge Base Article - CTAC (Communications Training Analysic Corporation)  &#xA;=================================================&#xA;&#xA;Subject: Smoke test for Searchblox AMI&#xA;&#xA;Revision History:&#xA;    2019-03-08 14:44:41 - Version 1 created by bao&#xA;&#xA;Details: &#xA;&#xA;- Ensure that ssh into each server (index &amp;amp; 2 search) is successful&#xA;- Once license is applied to each server, ensure that Searchblox application starts without errors in status.log. Use the following command to start the application:&#xA;service searchblox start&#xA;- Ensure that login to the admin console UI for each server (index &amp;amp; 2 search) using default admin login is successful&#xA;- Spot-test indexing of Collections and ensure no errors in status.log&#xA;- Ensure that the Collection UI is accessible&#xA;&#xA;&#xA;=================================================&#xA;This document is proprietary and confidential. No part of this document may be &#xA;disclosed in any manner to a third party without the prior written consent of &#xA;CTAC.```&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>searchblox licensing</title>
+      <link>//localhost:1313/en/kb/tools_processes/searchblox/searchblox-licensing/</link>
+      <pubDate>Sat, 05 Feb 2022 10:31:29 -0500</pubDate>
+      <guid>//localhost:1313/en/kb/tools_processes/searchblox/searchblox-licensing/</guid>
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Knowledge Base Article - CTAC (Communications Training Analysis Corporation)  &#xA;=================================================&#xA;&#xA;Subject: Searchblox licensing&#xA;&#xA;Revision History:&#xA;    2019-09-09 21:32:48 - Version 1 created by Bao&#xA;&#xA;Details: (include steps to reproduce, symptoms, corrective actions, contact information, links and a any other helpful information)&#xA;&#xA;Searchblox licensing&#xA;&#xA;To apply a new SearchBlox license&#xA;&#xA;1) stop searchblox&#xA;2) backup the existing license&#xA;cd /opt/searchblox/webapps/searchblox/WEB-INF/&#xA;cp license.xml license.xml.bak (or similar)&#xA;replace the contents of license.xml with that of the new license&#xA;3) start searchblox&#xA;4) repeat 1-3 for search servers&#xA;5) verify that you can log into the frontend, and go to Admin &amp;gt; License to confirm the new license has been applied&#xA;&#xA;=================================================&#xA;This document is proprietary and confidential. No part of this document may be &#xA;disclosed in any manner to a third party without the prior written consent of &#xA;CTAC.```&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+  </channel>
+</rss>

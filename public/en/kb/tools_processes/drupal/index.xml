@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Drupal on Documentation for Hugo Learn Theme</title>
+    <link>//localhost:1313/en/kb/tools_processes/drupal/</link>
+    <description>Recent content in Drupal on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 05 Feb 2022 10:31:29 -0500</lastBuildDate>
+    <atom:link href="//localhost:1313/en/kb/tools_processes/drupal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Drupal</title>
+      <link>//localhost:1313/en/kb/tools_processes/drupal/drupal/</link>
+      <pubDate>Sat, 05 Feb 2022 10:31:29 -0500</pubDate>
+      <guid>//localhost:1313/en/kb/tools_processes/drupal/drupal/</guid>
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Knowledge Base Article - CTAC (Communications Training Analysis Corporation)  &#xA;=================================================&#xA;&#xA;Subject: Drupal RI Migration&#xA;&#xA;Revision History:&#xA;    2015-07-17 15:09:00 - Version 1 created by Bao&#xA;&#xA;Prerequisites:&#xA;- apache web server exists (hhs-origin)&#xA;- nginx &amp;amp; varnish server exists (fda-varnish-web)&#xA;- drupal server exists (fda-as-drupal)&#xA;- RDS exists&#xA;&#xA;&#xA;For our example, we’ll be migrating The Real Cost. &#xA;&#xA;TLDR: basic steps in accomplishing this.&#xA;- Migrate apache vhost&#xA;- Migrate nginx config &#xA;- Migrate varnish config&#xA;- Migrate php-fpm config&#xA;- Migrate drupal data&#xA;- Migrate php5-fpm config&#xA;- Migrate apache drupal config&#xA;- Migrate database&#xA;- Some Post migration config changes&#xA;&#xA;Migrate Apache vhost&#xA;- Related Hosts:&#xA;Old server: origin-ws-02.domain.local&#xA;New server: hhs-origin-03.prod.hhs.local&#xA;- The related vhosts will be found in /etc/apache2/sites-available. Copy them from this directory in the old server to the same directory in the new server.&#xA;- You will also need to copy /etc/apache2/ssl to the new server.&#xA;&#xA;Migrate nginx configuration&#xA;- Related Hosts:&#xA;var-ws-01/02&#xA;fda-varnish-web-01/02&#xA;- The Nginx related config files will be found in /etc/nginx/sites-available&#xA;&#xA;&#xA;Migrate varnish configuration&#xA;- Related Hosts:&#xA;var-ws-01/02&#xA;fda-varnish-web-01/02&#xA;- The relevant config files will be found in /etc/varnish&#xA;&#xA;Migrate drupal data&#xA;- fda-as-drupal-3/4 (drupal) -&amp;gt; fda-drupal-app-01/02 (which points to fda-gluster-01/02)&#xA;&#xA;Migrate php5-fpm config&#xA;- The php5-fpm config file is /etc/php5/fpm/php-fpm.conf&#xA;&#xA;Migrate apache drupal configuration&#xA;- fda-as-drupal-3/4 (apache) -&amp;gt; fda-drupal-01/02&#xA;- The relevant directory is in /appdata/www/&amp;lt;name of instance&amp;gt;&#xA;&#xA;Migrate database&#xA;- fda-db-drupal-3/4 -&amp;gt; rds&#xA;- Just do a simple MySQL dump and restore into RDS&#xA;&#xA;Post migration config changes&#xA;- Update settings.php in the drupal app servers&#xA;in fda-drupal-app-01/02&#xA;cd /appdata/www/drupal_fda_tobacco/sites/default/&#xA;vi settings.php&#xA;go to the end of the file and update the database settings to point to the new RDS. This file gets overwritten when you reimport the drupal directory.&#xA;&#xA;&#xA;&#xA;&#xA;Misc&#xA;- the /appdata/www/drupal_info/.htaccess file on drupal-as-3 wasn’t included in the tar and caused a lot of headaches. If you’re getting a 404 when clicking the AMS login, check for the existence of this file.&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;=================================================&#xA;This document is proprietary and confidential. No part of this document may be &#xA;disclosed in any manner to a third party without the prior written consent of &#xA;CTAC.&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SSH on Documentation for Hugo Learn Theme</title>
+    <link>//localhost:1313/en/kb/tools_processes/ssh/</link>
+    <description>Recent content in SSH on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 05 Feb 2022 10:31:29 -0500</lastBuildDate>
+    <atom:link href="//localhost:1313/en/kb/tools_processes/ssh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ssh preventing timeouts</title>
+      <link>//localhost:1313/en/kb/tools_processes/ssh/ssh-preventing-timeouts/</link>
+      <pubDate>Sat, 05 Feb 2022 10:31:29 -0500</pubDate>
+      <guid>//localhost:1313/en/kb/tools_processes/ssh/ssh-preventing-timeouts/</guid>
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Knowledge Base Article - CTAC (Communications Training Analysis Corporation)  &#xA;=================================================&#xA;&#xA;Subject: Preventing SSH Timeouts&#xA;&#xA;Revision History:&#xA;    2015-03-11 18:33:59 - Version 1 created by Paul Rigor&#xA;&#xA;Details: (include steps to reproduce, symptoms, corrective actions, contact information, links and a any other helpful information)&#xA;&#xA; Some environments require short timeouts to minimize the vulnerable time a server is open via SSH and a user leave thier computer insecure.   This work around should only be used when you have time intensive tasks AND your terminal secured at all times.&#xA;&#xA; There are two ways to prevent these timeouts.&#xA;&#xA; 1) in ~/.ssh/config add the following:&#xA;&#xA; Host *&#xA;    ServerAliveInterval=15&#xA;&#xA;2) In iterm, navigate to preferences -&amp;gt; Profiles -&amp;gt; Select the profile you are using -&amp;gt; Session -&amp;gt; Select &amp;#39;When idle, send ASCII code: 0&amp;#39;&#xA;&#xA;Either will prevent the timeouts.&#xA;&#xA;*IMPORTANT*&#xA;&#xA;If you use the ctac_vpn_manage process with Viscosity.  be sure to log into the VPN account where the timeout occurs as the ssh config file is one of the managed files.&#xA;&#xA;https://bitbucket.org/CTACSYSADMIN/ctac_vpn_manage&#xA;&#xA;&#xA;=================================================&#xA;This document is proprietary and confidential. No part of this document may be &#xA;disclosed in any manner to a third party without the prior written consent of &#xA;CTAC.```&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+  </channel>
+</rss>

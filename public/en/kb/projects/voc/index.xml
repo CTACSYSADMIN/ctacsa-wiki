@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VOC on Documentation for Hugo Learn Theme</title>
+    <link>//localhost:1313/en/kb/projects/voc/</link>
+    <description>Recent content in VOC on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 05 Feb 2022 10:31:29 -0500</lastBuildDate>
+    <atom:link href="//localhost:1313/en/kb/projects/voc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>voc akamai display error</title>
+      <link>//localhost:1313/en/kb/projects/voc/voc-akamai-display-error/</link>
+      <pubDate>Sat, 05 Feb 2022 10:31:29 -0500</pubDate>
+      <guid>//localhost:1313/en/kb/projects/voc/voc-akamai-display-error/</guid>
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Knowledge Base Article - CTAC (Communications Training Analysic Corporation)  &#xA;=================================================&#xA;&#xA;Subject: VOC display error&#xA;&#xA;Revision History:&#xA;    2015-04-06 12:40:16 - Version 1 created by Bishal KC&#xA;&#xA;Details: Akamai Reference Error&#xA;&#xA; VOC public is behind Akamai cache, all the js and iframe embeded is run through Akamai. If Akamai cant reach the origin servers if throws out error as below. &#xA; &#x9;Error Info: An error occurred while processing your request.&#xA; &#x9;Reference #97.7c76aad1.1428330545.737b2a6&#xA;&#xA; Fix: Updated SG with the latest IP ranges. Latest SG for Akamai Produciton details as below&#xA; &#x9;SG ID: sg-fd1b6e99&#xA; &#x9;SG Name: Akamai SiteShield Production&#xA; &#x9;SG Description: Akamai SiteShield Production&#xA;&#xA;=================================================&#xA;This document is proprietary and confidential. No part of this document may be &#xA;disclosed in any manner to a third party without the prior written consent of &#xA;CTAC.```&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>voc monthly report process</title>
+      <link>//localhost:1313/en/kb/projects/voc/voc-monthly-report-process/</link>
+      <pubDate>Sat, 05 Feb 2022 10:31:29 -0500</pubDate>
+      <guid>//localhost:1313/en/kb/projects/voc/voc-monthly-report-process/</guid>
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Knowledge Base Article - CTAC (Communications Training Analysis Corporation)  &#xA;=================================================&#xA;&#xA;Subject: VOC Monthly Report process&#xA;&#xA;Revision History:&#xA;    2014-10-01 09:15:59 - Version 1 created by Paul Rigor&#xA;&#xA;Details: (include steps to reproduce, symptoms, corrective actions, contact information, links and a any other helpful information)&#xA;&#xA;ci: hhs-voc-app-04.prod.hhs.local&#xA;​​&#xA;Note:  Change the 9,2014 to the current previous month, year.&#xA;&#xA;&#xA;- Switch to deploy user:&#xA;sudo su - deploy&#xA;- cd to the voc_admin directory:&#xA;cd /appdata/deploy/voc_admin/current&#xA;- Run the rake command&#xA;command: RAILS_ENV=production rake reporting:csv_report[9,2014]​ in /appdata/voc_admin/current as ruby-app. Generates a MM_YYYY_report.csv file in current dir.&#xA;&#xA;Note:  RAILS_ENV=production rake -T  lists all available tasks.&#xA;&#xA;&#xA;&#xA;Once the file is generated, it will be in the said directory. You will need to scp to your local machine and email to the necessary parties. Usually this is Darryl Cunningham (Darryl.Cunningham@hhs.gov). May also be a good idea to CC the creator of the ticket.&#xA;&#xA;Troubleshooting&#xA;- Here’s an non-authoritative way of validating the data in the query for the monthly column:&#xA;select a.survey_version_id, b.survey_id, CONCAT(b.major,&amp;#39;.&amp;#39;, b.minor) as &amp;#34;Survey Version&amp;#34;, count(*) from voc_production.survey_responses a join voc_production.survey_versions b on a.survey_version_id=b.id where a.created_at &amp;gt; &amp;#39;2015-08-01&amp;#39; and a.created_at &amp;lt; &amp;#39;2015-09-01&amp;#39; group by a.survey_version_id order by b.survey_id;&#xA;&#xA;&#xA;=================================================&#xA;This document is proprietary and confidential. No part of this document may be &#xA;disclosed in any manner to a third party without the prior written consent of &#xA;CTAC.```&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+  </channel>
+</rss>

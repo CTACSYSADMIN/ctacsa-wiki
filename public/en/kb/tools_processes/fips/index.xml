@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>FIPS on Documentation for Hugo Learn Theme</title>
+    <link>//localhost:1313/en/kb/tools_processes/fips/</link>
+    <description>Recent content in FIPS on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 05 Feb 2022 10:31:29 -0500</lastBuildDate>
+    <atom:link href="//localhost:1313/en/kb/tools_processes/fips/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>fips 140 1 and 2 nist modules</title>
+      <link>//localhost:1313/en/kb/tools_processes/fips/fips-140-1-and-2-nist-modules/</link>
+      <pubDate>Sat, 05 Feb 2022 10:31:29 -0500</pubDate>
+      <guid>//localhost:1313/en/kb/tools_processes/fips/fips-140-1-and-2-nist-modules/</guid>
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt; &#xA;Here’s the location of the NIST Modules.   FIPS-140-1 and FIPS-140-2&#xA; &#xA; &#xA;http://csrc.nist.gov/groups/STM/cmvp/documents/140-1/140InProcess.pdf&#xA; &#xA;http://csrc.nist.gov/groups/STM/cmvp/documents/140-1/140val-all.htm&#xA; &#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+  </channel>
+</rss>

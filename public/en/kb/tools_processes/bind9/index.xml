@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bind9 (DNS) on Documentation for Hugo Learn Theme</title>
+    <link>//localhost:1313/en/kb/tools_processes/bind9/</link>
+    <description>Recent content in Bind9 (DNS) on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 05 Feb 2022 10:31:29 -0500</lastBuildDate>
+    <atom:link href="//localhost:1313/en/kb/tools_processes/bind9/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>bind9 dns zones permission denied</title>
+      <link>//localhost:1313/en/kb/tools_processes/bind9/bind9-dns-zones-permission-denied/</link>
+      <pubDate>Sat, 05 Feb 2022 10:31:29 -0500</pubDate>
+      <guid>//localhost:1313/en/kb/tools_processes/bind9/bind9-dns-zones-permission-denied/</guid>
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Knowledge Base Article - CTAC (Communications Training Analysis Corporation)  &#xA;=================================================&#xA;&#xA;Subject: Bind9 (DNS) - dumping master file: /etc/bind/zones/tmp-XXXXXXX: open: permission denied error&#xA;&#xA;Revision History:&#xA;    2016-02-08 15:00:00 - Version 1 created by Paul Rigor&#xA;&#xA;Details: (include steps to reproduce, symptoms, corrective actions, contact information, links and a any other helpful information)&#xA;&#xA;Apparmor on Ubuntu prevents to writing of zone files properly.&#xA;&#xA;Fix:&#xA;&#xA; Edit: /etc/apparmor.d/usr.sbin.name&#xA;&#xA; Add:  /etc/bind/zones/** rw,&#xA;&#xA;Save and Restart apparmor&#xA;&#xA;&#xA;=================================================&#xA;This document is proprietary and confidential. No part of this document may be &#xA;disclosed in any manner to a third party without the prior written consent of &#xA;CTAC.```&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>dns add update host alias</title>
+      <link>//localhost:1313/en/kb/tools_processes/bind9/dns-add-update-host-alias/</link>
+      <pubDate>Sat, 05 Feb 2022 10:31:29 -0500</pubDate>
+      <guid>//localhost:1313/en/kb/tools_processes/bind9/dns-add-update-host-alias/</guid>
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Knowledge Base Article - CTAC (Communications Training Analysis Corporation)  &#xA;=================================================&#xA;&#xA;Subject: Add/Update host in DNS Zone File.&#xA;&#xA;Revision History:&#xA;    2014-09-30 13:13:22 - Version 1 created by Paul Rigor&#xA;&#xA;Details: (include steps to reproduce, symptoms, corrective actions, contact information, links and a any other helpful information)&#xA;&#xA; To add devices to the domain.local domain  perform the following steps.&#xA;&#xA; 1) Log into the master DNS (dns.domain.local)&#xA; 2) sudo vi /var/cache/bind/db.domain.local&#xA;        Note: validate the location in /etc/bind/named.conf.local (or follow named.conf from the top)&#xA; 3) Update the Serial to the current date/time or increment by 1 if integer&#xA;        201409301600             ; Serial - YYYYMMDDHHMM&#xA;&#xA; 4) Add the alias (alphabetical order preferred)&#xA;        device-alias-name  IN  A   XXX.XXX.XXX.XXX&#xA;5)  sudo /etc/init.d/bind9 reload&#xA;&#xA;Then test.    &#xA;&#xA;Nothing needs done on the slaves.  They should replicate from the master (if properly configured)&#xA;&#xA;&#xA;=================================================&#xA;This document is proprietary and confidential. No part of this document may be &#xA;disclosed in any manner to a third party without the prior written consent of &#xA;CTAC.```&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>dns resolv conf search options</title>
+      <link>//localhost:1313/en/kb/tools_processes/bind9/dns-resolv-conf-search-options/</link>
+      <pubDate>Sat, 05 Feb 2022 10:31:29 -0500</pubDate>
+      <guid>//localhost:1313/en/kb/tools_processes/bind9/dns-resolv-conf-search-options/</guid>
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Knowledge Base Article - CTAC (Communications Training Analysis Corporation)  &#xA;=================================================&#xA;&#xA;Subject: DNS Search and Options for Resolve.conf&#xA;&#xA;Revision History:&#xA;    2015-06-09 14:58:37 - Version 1 created by Paul Rigor&#xA;&#xA;Details: (include steps to reproduce, symptoms, corrective actions, contact information, links and a any other helpful information)&#xA;&#xA; In compound domains you may need to add some options to your resolve.conf to get it to work.&#xA;&#xA;Example:&#xA;&#xA;options ndots:3 timeout:6 attempts:2&#xA;nameserver 10.141.230.10&#xA;nameserver 10.141.231.10&#xA;search west.gsa.local east.gsa.local gsa.local&#xA;&#xA;In AWS, the search comes from the domain name option on a DCHP option set for the VPC.   However, there is no setting for the options.  For Ubuntu, the simplest solution is to write it to /etc/resolvconf/resolv.conf.d/head .&#xA;&#xA;Info:&#xA;&#xA;ndots:n&#xA;sets a threshold for the number of dots which must appear in a name given to res_query(3) (see resolver(3)) before an initial absolute query will be made. The default for n is 1, meaning that if there are any dots in a name, the name will be tried first as an absolute name before any search list elements are appended to it. The value for this option is silently capped to 15.&#xA;&#xA;attempts:n&#xA;sets the number of times the resolver will send a query to its name servers before giving up and returning an error to the calling application. The default is RES_DFLRETRY (currently 2, see &amp;lt;resolv.h&amp;gt;). The value for this option is silently capped to 5.&#xA;&#xA;timeout:n&#xA;sets the amount of time the resolver will wait for a response from a remote name server before retrying the query via a different name server. Measured in seconds, the default is RES_TIMEOUT (currently 5, see &amp;lt;resolv.h&amp;gt;). The value for this option is silently capped to 30.&#xA;&#xA;&#xA;&#xA;=================================================&#xA;This document is proprietary and confidential. No part of this document may be &#xA;disclosed in any manner to a third party without the prior written consent of &#xA;CTAC.```&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+  </channel>
+</rss>

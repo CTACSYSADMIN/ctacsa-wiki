@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nginx on Documentation for Hugo Learn Theme</title>
+    <link>//localhost:1313/en/kb/tools_processes/nginx/</link>
+    <description>Recent content in Nginx on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 05 Feb 2022 10:31:29 -0500</lastBuildDate>
+    <atom:link href="//localhost:1313/en/kb/tools_processes/nginx/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>nginx manually rotate log</title>
+      <link>//localhost:1313/en/kb/tools_processes/nginx/nginx-manually-rotate-log/</link>
+      <pubDate>Sat, 05 Feb 2022 10:31:29 -0500</pubDate>
+      <guid>//localhost:1313/en/kb/tools_processes/nginx/nginx-manually-rotate-log/</guid>
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Knowledge Base Article - CTAC (Communications Training Analysis Corporation)  &#xA;=================================================&#xA;&#xA;Subject: Manually rotate nginx log&#xA;&#xA;Revision History:&#xA;    2017-07-19 18:30:00 - Version 1 created by Paul Rigor&#xA;    2017-07-20 07:45:00 - Version 2 add use case - Paul Rigor&#xA;&#xA;Details: (include steps to reproduce, symptoms, corrective actions, contact information, links and a any other helpful information)&#xA;&#xA;To manually rotate a log file for nginx.&#xA;&#xA;Use case:  Rapidly growing log file, delayed compress is active on logrotate or no logrotate.d.  Please, use with caution: results may vary.&#xA;&#xA;mv the-log-file.log the-log-file.log.0&#xA;kill -USR1 `cat /var/run/nginx.pid`&#xA;gzip the-log-file.log.0&#xA;&#xA;&#xA;Note:  The location of the nginx.pid file may vary.&#xA;&#xA;Per Bao:&#xA;&#xA;Alternatively, you can run logrotate manually on that particular configuration ( logrotate -f /etc/logrotate.d/nginx). This will update the logrotate pointer in /var/lib/logrotate.d/status accordingly. It might be a bit cleaner calling via the logrotate command, but this will depend on your needs for rotating the log :) &#xA;&#xA;=================================================&#xA;This document is proprietary and confidential. No part of this document may be &#xA;disclosed in any manner to a third party without the prior written consent of &#xA;CTAC.&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+  </channel>
+</rss>

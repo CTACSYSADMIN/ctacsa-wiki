@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>FTLW on Documentation for Hugo Learn Theme</title>
+    <link>//localhost:1313/en/kb/projects/ftlw/</link>
+    <description>Recent content in FTLW on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 10 Jan 2024 10:31:29 -0500</lastBuildDate>
+    <atom:link href="//localhost:1313/en/kb/projects/ftlw/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ft Leavenworth Deployment Procedures</title>
+      <link>//localhost:1313/en/kb/projects/ftlw/ftlw-deployment-procedures/</link>
+      <pubDate>Wed, 10 Jan 2024 10:31:29 -0500</pubDate>
+      <guid>//localhost:1313/en/kb/projects/ftlw/ftlw-deployment-procedures/</guid>
+      <description>&lt;p&gt;Subject: Ft Leavenworth Deployment Procedures&#xA;Revision History:&#xA;2021-11-22 - Version 1 created by Andrew and Zach&lt;/p&gt;&#xA;&lt;p&gt;Details: (include steps to reproduce, symptoms, corrective actions, contact information, links and a any other helpful information)&lt;/p&gt;&#xA;&lt;div class=&#34;flex align-center gdoc-page__anchorwrap&#34;&gt;&#xA;    &lt;h3 id=&#34;ft-leavenworth-deployment-procedures&#34;&#xA;    &gt;&#xA;        Ft Leavenworth Deployment procedures:&#xA;    &lt;/h3&gt;&#xA;    &lt;a data-clipboard-text=&#34;//localhost:1313/en/kb/projects/ftlw/ftlw-deployment-procedures/#ft-leavenworth-deployment-procedures&#34; class=&#34;gdoc-page__anchor clip flex align-center&#34; title=&#34;Anchor to: Ft Leavenworth Deployment procedures:&#34; aria-label=&#34;Anchor to: Ft Leavenworth Deployment procedures:&#34; href=&#34;#ft-leavenworth-deployment-procedures&#34;&gt;&#xA;        &lt;svg class=&#34;gdoc-icon gdoc_link&#34;&gt;&lt;use xlink:href=&#34;#gdoc_link&#34;&gt;&lt;/use&gt;&lt;/svg&gt;&#xA;    &lt;/a&gt;&#xA;&lt;/div&gt;&#xA;&lt;p&gt;The devs make changes to dev and staging. No changes should be made to prod. Dev and Stage are not autoscaled, but production is.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

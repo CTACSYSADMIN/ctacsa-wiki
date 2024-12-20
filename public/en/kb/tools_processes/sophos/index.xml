@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sophos on Documentation for Hugo Learn Theme</title>
+    <link>//localhost:1313/en/kb/tools_processes/sophos/</link>
+    <description>Recent content in Sophos on Documentation for Hugo Learn Theme</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 05 Feb 2022 10:31:29 -0500</lastBuildDate>
+    <atom:link href="//localhost:1313/en/kb/tools_processes/sophos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>sophos grant revoke vpn access to user via ldap</title>
+      <link>//localhost:1313/en/kb/tools_processes/sophos/sophos-grant-revoke-vpn-access-to-user-via-ldap/</link>
+      <pubDate>Sat, 05 Feb 2022 10:31:29 -0500</pubDate>
+      <guid>//localhost:1313/en/kb/tools_processes/sophos/sophos-grant-revoke-vpn-access-to-user-via-ldap/</guid>
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Knowledge Base Article - CTAC (Communications Training Analysis Corporation)  &#xA;=================================================&#xA;&#xA;Subject: Sophos: Grant/Revoke Users Access to VPN&#xA;&#xA;Revision History:&#xA;    2015-09-09 12:08:08 - Version 1 created by Paul Rigor&#xA;    2015-09-17 12:08:08 - Version 2 Made generic for HHS/GSA Paul Rigor&#xA;&#xA;Details: (include steps to reproduce, symptoms, corrective actions, contact information, links and a any other helpful information)&#xA;&#xA; Note: for GSA:&#xA; User must be created in both gsa-east-svcs and gsa-west-svcs ldap servers (10.151.231.10 and 10.141.231.10 respectively).   Users DN must be added to the gsa_vpn_user group via the member attribute.&#xA;&#xA; Note for HHS:&#xA; Users DN must be added to the hhs_vpn_user group via the member attribute.&#xA;&#xA; example:&#xA;&#xA; member  uid=prigor,ou=people,dc=hhs,dc=local&#xA;&#xA; note:  The memberOf gsa_vpn_user/hhs_vpn_user operational attribute must be present for the user.&#xA;&#xA; Don&amp;#39;t forget to add users to other groups based on their access requirements.&#xA;&#xA; Don&amp;#39;t forget to send the user instructions on how to obtain their certificate and One-time-password token.&#xA;&#xA; To revoke a user - simply remove them from the gsa_vpn_user and/or hhs_vpn_user group.&#xA;&#xA;&#xA;&#xA;=================================================&#xA;This document is proprietary and confidential. No part of this document may be &#xA;disclosed in any manner to a third party without the prior written consent of &#xA;CTAC.```&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>sophos install migrate troubleshooting</title>
+      <link>//localhost:1313/en/kb/tools_processes/sophos/sophos-install-migrate-troubleshooting/</link>
+      <pubDate>Sat, 05 Feb 2022 10:31:29 -0500</pubDate>
+      <guid>//localhost:1313/en/kb/tools_processes/sophos/sophos-install-migrate-troubleshooting/</guid>
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Knowledge Base Article - CTAC (Communications Training Analysis Corporation)  &#xA;=================================================&#xA;&#xA;Subject: Sophos Notes for Install, Migration or Troubleshooting&#xA;&#xA;Revision History:&#xA;    2015-08-06 06:47:20 - Version 1 created by Paul Rigor&#xA;&#xA;Details: (include steps to reproduce, symptoms, corrective actions, contact information, links and a any other helpful information)&#xA;&#xA;  When installing, migrating or troubleshooting Sophos here are a few things to be aware of:&#xA;&#xA;  * Ensure the source/destination check (AWS) is set to to false on both[all] interfaces. &#xA;  * Ensure the security group(s) on the internal/private interface do not block traffic.  In most cases this should be &amp;#34;allow all&amp;#34; &#xA;  * Ensure the routing table for private subnets is associated with the Sophos internal network interface.&#xA;  * When restoring a backup, the version of the backup must match the firmware version of Sophos.  If not, you will need to update or downgrade.&#xA;&#xA;=================================================&#xA;This document is proprietary and confidential. No part of this document may be &#xA;disclosed in any manner to a third party without the prior written consent of &#xA;CTAC.```&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>Troubleshooting Sophos   Jira issues</title>
+      <link>//localhost:1313/en/kb/tools_processes/sophos/troubleshooting-sophos---jira-issues/</link>
+      <pubDate>Sat, 05 Feb 2022 10:31:29 -0500</pubDate>
+      <guid>//localhost:1313/en/kb/tools_processes/sophos/troubleshooting-sophos---jira-issues/</guid>
+      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Knowledge Base Article - CTAC (Communications Training Analysis Corporation)  &#xA;=================================================&#xA;&#xA;Subject: Troubleshooting Sophos - Jira issues&#xA;&#xA;When converting a LDAP account to Posix for the use of Sophos VPN&#xA;&#xA;&#xA;1) If user exists in LDAP take note of the users Employee ID and User name&#xA;&#xA;2) Make sure to recreate the account with the same user name as before.&#xA;&#xA;3) Generate a password for the user&#xA;&#xA;4) After the account is created search for the DN on LDAP&#xA;&#xA;5) if the account is available on jira_users group delete it &#xA;&#xA;6) Log in to JIRA, navigate to Administrator &amp;gt; User &amp;gt; Directory and sync the ldap.&#xA;&#xA;7) Go back to LDAP and add the user back to the ira_users group &#xA;&#xA;8) Sync the Jira directory and search for the user to make sure it is available&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+  </channel>
+</rss>
